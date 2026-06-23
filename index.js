@@ -3,6 +3,8 @@ import express from "express"
 const app = express()
 app.use(express.json())
 
+console.log("okkk")
+
 const Port = process.env.PORT || 4000;
 
 app.listen(Port,()=>{

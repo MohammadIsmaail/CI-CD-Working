@@ -1,0 +1,29 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Code lo GitHub se
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Node install karo
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Dependencies install karo
+      - name: Install
+        run: npm install
+
+      # Build karo
+      - name: Build
+        run: npm run build
