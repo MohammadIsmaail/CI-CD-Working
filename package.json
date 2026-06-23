@@ -10,7 +10,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm nodemon index.js"
+    "dev": "npm nodemon index.js",
+    "build": "echo Build Successful"
   },
   "keywords": [],
   "type": "module",
